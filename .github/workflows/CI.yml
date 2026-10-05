@@ -89,7 +89,9 @@ jobs:
 
   publish:
     name: Publish Python 🐍 distribution 📦 to PyPI
-    if: github.ref_type == 'tag'
+    # Eugo fork: never publish. The PyPI name "aioboto3" belongs to the upstream project, and this fork's
+    # releases are installed from git tags. The upstream condition was: github.ref_type == 'tag'
+    if: false
     needs:
       - check
     runs-on: ubuntu-24.04
