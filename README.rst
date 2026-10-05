@@ -2,6 +2,33 @@
 Async AWS SDK for Python
 ========================
 
+About this fork
+---------------
+
+This is a fork of `terricain/aioboto3 <https://github.com/terricain/aioboto3>`_, maintained by Eugo.
+
+The upstream project is being archived by its maintainer. Its last release, 15.5.0, pins
+``aiobotocore[boto3]==2.25.1`` and cannot be installed next to aiobotocore 3.x, which removed the
+``boto3`` extra. This fork keeps aioboto3 working with aiobotocore 3.x and current boto3/botocore
+releases for the projects that depend on it.
+
+Changes from upstream 15.5.0:
+
+* Requires ``aiobotocore>=3.1.2,<4`` and depends on ``boto3`` and ``botocore`` directly
+  (based on `#401 <https://github.com/terricain/aioboto3/pull/401>`_ by Donghee Na)
+* ``test_patches`` accepts the boto3 1.42 and 1.43 source digests
+* Importing from a source checkout without ``_version.py`` no longer raises ``NameError``
+* CI no longer publishes to PyPI
+
+The API is unchanged; ``import aioboto3`` works as before.
+
+The fork is not published to PyPI. Install a release tag from git::
+
+    pip install "aioboto3 @ git+https://github.com/eugo-inc/aioboto3@v15.5.0+eugo.1"
+
+aioboto3 was written by Terri Cain and its contributors, and all credit for it goes to them. The
+fork keeps the original Apache License 2.0 (see ``LICENSE``).
+
 
 .. image:: https://img.shields.io/pypi/v/aioboto3.svg
         :target: https://pypi.python.org/pypi/aioboto3
