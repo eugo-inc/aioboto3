@@ -2,6 +2,16 @@
 History
 =======
 
+15.5.0+eugo.1 (2026-10-05)
+--------------------------
+
+* First release of the eugo-inc fork, for aiobotocore 3.x
+* Bumped `aiobotocore` to `>=3.1.2,<4`; `boto3` and `botocore` are now direct dependencies, as aiobotocore 3 removed its `boto3` extra - based on terricain/aioboto3#401, thanks @corona10
+* `test_patches` accepts the boto3 1.42/1.43 source digests of `ResourceFactory.load_from_definition`, `Session.__init__`, `Session.resource` and `s3.inject.copy` (docstring and formatting changes only)
+* Fixed `NameError` on import when `_version.py` is missing
+* Disabled the PyPI publish job in CI
+* Added a note about the fork to the README
+
 15.5.0 (2025-10-29)
 -------------------
 
