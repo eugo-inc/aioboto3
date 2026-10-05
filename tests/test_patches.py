@@ -54,7 +54,7 @@ _API_DIGESTS = {
     # session.py
     Session.__init__: {'3f494c3eb0987251cae373873499e917f264571b', '5ecb638ab182cfcab0bdcb1998c3bd415689caff'},
     Session._register_default_handlers: {'04f247de526b7a0af15737e04019ade52cc65446', '74fa15629c9ea69f79f3a5285357dbf53f734f2d', 'e30e5c3a0f6bc8f002ba679d4bae831914fc67a0'},
-    Session.resource: {'5e3568b28281a75eaf9725fab67c33dc16a18144', 'b110781f5a5d148dd1d614e7611650a16cbea372'},
+    Session.resource: {'5e3568b28281a75eaf9725fab67c33dc16a18144', 'b110781f5a5d148dd1d614e7611650a16cbea372', '9ef5dc35e477a8f289ca3c2e54dd8d9950ee940e'},
 
     # dynamodb/table.py
     register_table_methods: {'1d9191de712871b92e1e87f94c6583166a315113'},
@@ -71,7 +71,7 @@ _API_DIGESTS = {
     download_fileobj.__wrapped__: {'3987566bbd712aa81c332b1c2684327a9fd0de38'},
     upload_fileobj.__wrapped__: {'7d344505b3ea95168603e534c75a1a51551b35d5'},
     upload_file.__wrapped__: {'9949e77ef9c98c5017388d8150c3cbf00e412077'},
-    copy.__wrapped__: {'534f68820a410ba41072026994badca7f66fe1b9'},
+    copy.__wrapped__: {'534f68820a410ba41072026994badca7f66fe1b9', 'fb799c953ab7d41877439e5f0a64c7fbae68ad37'},
     S3TransferConfig.__init__: {'f418b3dab3c6f073f19feaf1172359bdc3863e22'},
 }
 
