@@ -10,7 +10,7 @@ __email__ = 'terri@dolphincorp.co.uk'
 
 try:
     from aioboto3._version import __version__
-except PackageNotFoundError:
+except ImportError:  # no generated _version.py (a raw source checkout)
     __version__ = "0.0.0"
 
 
