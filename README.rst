@@ -7,7 +7,7 @@ About this fork
 
 This is a fork of `terricain/aioboto3 <https://github.com/terricain/aioboto3>`_, maintained by Eugo.
 
-The upstream project is being archived by its maintainer. Its last release, 15.5.0, pins
+The upstream project's last release, 15.5.0 (October 2025), pins
 ``aiobotocore[boto3]==2.25.1`` and cannot be installed next to aiobotocore 3.x, which removed the
 ``boto3`` extra. This fork keeps aioboto3 working with aiobotocore 3.x and current boto3/botocore
 releases for the projects that depend on it.
